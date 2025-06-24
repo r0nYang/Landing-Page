@@ -1,16 +1,21 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Roboto sans-serif;
+    box-sizing: border-box;
 }
 
-.header {
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.header, .footer{
     display: flex;
     justify-content: space-around;
     background-color: #1F2937;
+    padding-top: 1rem;
 }
 
-.header>.logo {
+.logo {
     font-size: 24px;
     color: #F9FAF8;
 }
@@ -33,31 +38,36 @@
     justify-content: center;
     /* flex: 1; */
     background-color: #1F2937;
-    padding: 50px;
-    gap: 10px;
+    padding: 3rem;
+    gap: 1rem;
 }
 
 .upper-content .left {
     display: flex;
     flex-direction: column;
     width: 400px;
-    gap: 10px;
+    gap: 0.8rem;
 }
 
-button {
+.left>button {
     width: 80px;
     height: 25px;
     background-color: #3882F6;
     border-radius: 6px;
     color: white;
-    border: 0;
+    /* border: 0; */
     text-align: center;
+}
+
+.info {
+    padding: 1.5rem;
 }
 
 .information_content {
     display: flex;
     justify-content: center;
     gap: 50px;
+    padding-top: 0.5rem;
 }
 
 .information_content img {
@@ -85,5 +95,79 @@ button {
 }
 
 .quote_section {
+    display: flex;
     background-color: #e5e7eb;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.quote_content {
+    padding: 2rem;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+    padding: 1rem;
+}
+
+.quote_author {
+    font-style: normal;
+    text-align: right;
+    font-weight: 600;
+    font-size: large;
+}
+
+.call_to_action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.cta_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882f6;
+    padding: 2rem 0rem;
+    width: 50rem;
+}
+
+.cta_left {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta_button>button {
+    white-space: nowrap;
+    padding: 0.5rem 0.5rem;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-radius: 6px;
+    border: 2px solid white;
+}
+
+.upper-content button {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.footer_txt {
+    padding: 1rem;
+    color: #E5E7EB;
 }
