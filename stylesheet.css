@@ -28,7 +28,7 @@ body {
 }
 
 .hero_text.main {
-    font-size: 48px;
+    font-size: 38px;
     color: #F9FaF8;
     font-weight: 900;
 }
@@ -46,11 +46,12 @@ body {
     display: flex;
     flex-direction: column;
     width: 400px;
-    gap: 0.8rem;
+    gap: 0.5rem;
 }
 
 .left>button {
-    width: 80px;
+    white-space: nowrap;
+    width: 7rem;
     height: 25px;
     background-color: #3882F6;
     border-radius: 6px;
@@ -63,23 +64,34 @@ body {
     padding: 1.5rem;
 }
 
-.information_content {
+.info_cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
-    padding-top: 0.5rem;
+    gap: 2rem;
+    padding: 2rem 1rem;
 }
 
-.information_content img {
-    border: 4px solid #3882F6;
+.info_cards img {
+    border: 3px solid #3882F6;
     border-radius: 8px;
+    width: 100%;
+    max-width: 180px;
+    height: 120px;
+    object-fit: cover;
 }
 
-.information_img {
+.info_card {
     display: flex;
     flex-direction: column;
-    max-width: 130px;
+    align-items: center;
+    max-width: 180px;
     gap: 10px;
+    text-align: center;
+}
+
+.info_card p {
+    font-size: 0.8rem;
 }
 
 .info_title {
@@ -112,6 +124,7 @@ body {
     font-style: italic;
     color: #1f2937;
     padding: 1rem;
+    flex-wrap: wrap;
 }
 
 .quote_author {
@@ -157,7 +170,7 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #F9FaF8;
 }
 
 .footer {
