@@ -8,11 +8,17 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.header, .footer{
+header, footer{
     display: flex;
     justify-content: space-around;
     background-color: #1F2937;
     padding-top: 1rem;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
 .logo {
@@ -24,11 +30,11 @@ body {
     display: flex;
     font-size: 18px;
     color: #E5E7EB;
-    gap: 15px;
+    gap: 20px;
 }
 
 .hero_text.main {
-    font-size: 38px;
+    font-size: 37px;
     color: #F9FaF8;
     font-weight: 900;
 }
@@ -51,7 +57,7 @@ body {
 
 .left>button {
     white-space: nowrap;
-    width: 7rem;
+    width: 6rem;
     height: 25px;
     background-color: #3882F6;
     border-radius: 6px;
@@ -75,7 +81,7 @@ body {
 .info_cards img {
     border: 3px solid #3882F6;
     border-radius: 8px;
-    width: 100%;
+    width: 75%;
     max-width: 180px;
     height: 120px;
     object-fit: cover;
@@ -173,14 +179,21 @@ a {
     color: #F9FaF8;
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
 
 .footer_txt {
     padding: 1rem;
     color: #E5E7EB;
+}
+
+.btn {
+    padding: 0.3rem 0.3rem;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    max-width: 7rem;
 }
